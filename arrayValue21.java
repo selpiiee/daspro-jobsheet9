@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 
 public class arrayValue21 {
@@ -14,7 +13,11 @@ public class arrayValue21 {
         }
 
         for (int i = 0; i < 10; i++) {
-            System.out.println("Final score " + i + " is " + finalScore[i]);
+            if (finalScore[i] > 70) {
+            System.out.println("Student " + i + " Passed!");
+            } else {
+                System.out.println("Student " + i + " Failed!");
+            }
         }
         sc.close();
     }
